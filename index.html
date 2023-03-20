@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>product</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Size/Color</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td>  Duffle Bag</td>
+                
+                <td>
+                    <select id="bag1">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+
+                    </select>
+                </td>
+                <td id="bagsize"></td>
+                </tr>
+                <tr>
+                    <td>T-Shirts</td>
+                    <td>
+                        <select id="bag2">
+                            <option value="gray">Light Gray</option>
+                            <option value="black">black</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </td>
+                    <td id="shirt1">
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>10.Dynamic List Generation</h1>
+            <ul id="original1">
+                <li>Clothes<button id="btn12">+</button></li> 
+                <ul id="original2">
+                    <li>T-Shirts<button id="btn12">+</button></li>
+                    <li>Trousers<button id="btn12">+</button></li>
+                </ul>
+                <li>Electronics<button id="btn12">+</button></li>
+                <ul id="original3">
+                    <li>Mobile<button id="btn12">+</button></li>
+                    <li>Tabs<button id="btn12">+</button></li>
+                </ul>
+            </ul>
+    </div>
+</body>
+<!-- Create a list of products with sub-categories. 
+When we click on  "+" button one more category can be added to the list in that category/sub-category. -->
+<script src="./main.js"></script>
+</html>
